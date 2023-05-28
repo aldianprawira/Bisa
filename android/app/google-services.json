@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "588853625362",
+    "project_id": "dinotis-2aa15",
+    "storage_bucket": "dinotis-2aa15.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588853625362:android:1b78c3b404821c304f0ecb",
+        "android_client_info": {
+          "package_name": "com.example.dinotis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588853625362-81hu2o8mhf75lk0ttqge5epu6lumhb44.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL3dqae-S3BWpDgbc8olEklFwlP7wqF_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588853625362-81hu2o8mhf75lk0ttqge5epu6lumhb44.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
