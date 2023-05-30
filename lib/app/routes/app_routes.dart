@@ -15,6 +15,10 @@ abstract class Routes {
   static const EDUCATION = _Paths.EDUCATION;
   static const NOTIFICATION = _Paths.NOTIFICATION;
   static const MEET = _Paths.MEET;
+  static const WALLET = _Paths.WALLET;
+  static const TRANSACTION = _Paths.TRANSACTION;
+  static const PROFILE = _Paths.PROFILE;
+  static const EDIT_PROFILE = _Paths.EDIT_PROFILE;
 }
 
 abstract class _Paths {
@@ -31,4 +35,8 @@ abstract class _Paths {
   static const EDUCATION = '/education';
   static const NOTIFICATION = '/notification';
   static const MEET = '/meet';
+  static const WALLET = '/wallet';
+  static const TRANSACTION = '/transaction';
+  static const PROFILE = '/profile';
+  static const EDIT_PROFILE = '/edit-profile';
 }

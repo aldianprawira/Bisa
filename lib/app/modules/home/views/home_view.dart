@@ -44,10 +44,13 @@ class HomeView extends GetView<HomeController> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            CircleAvatar(
-                              backgroundImage: const AssetImage("assets/images/pp.png"),
-                              backgroundColor: Colors.grey[300],
-                              radius: 24,
+                            GestureDetector(
+                              onTap: () => Get.toNamed(Routes.PROFILE),
+                              child: CircleAvatar(
+                                backgroundImage: const AssetImage("assets/images/pp.png"),
+                                backgroundColor: Colors.grey[300],
+                                radius: 24,
+                              ),
                             ),
                             const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -85,7 +88,8 @@ class HomeView extends GetView<HomeController> {
                         ),
                         const SizedBox(height: 40),
                         TextField(
-                          onEditingComplete: () => Get.toNamed(Routes.SEARCHBAR),
+                          readOnly: true,
+                          onTap: () => Get.toNamed(Routes.SEARCHBAR),
                           decoration: InputDecoration(
                             hintText: "Search your creator...",
                             hintStyle: const TextStyle(
@@ -140,13 +144,15 @@ class HomeView extends GetView<HomeController> {
                       images: "assets/images/forum.png",
                       title: "Forum",
                     ),
-                    const MainMenu(
+                    MainMenu(
                       images: "assets/images/wallet.png",
                       title: "Wallet",
+                      onTap: () => Get.toNamed(Routes.WALLET),
                     ),
-                    const MainMenu(
+                    MainMenu(
                       images: "assets/images/transaction.png",
                       title: "Transaction",
+                      onTap: () => Get.toNamed(Routes.TRANSACTION),
                     ),
                   ],
                 ),
@@ -422,10 +428,6 @@ class HomeView extends GetView<HomeController> {
               const SizedBox(height: 16),
             ],
           ),
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () => controller.authC.logout(),
-          child: const Icon(Icons.logout),
         ),
       ),
     );
